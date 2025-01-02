@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADVOCACY FOR SAFER STREETS</title>
+    <title>PowerPoint Presentation</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #87CEEB; /* Skyblue background */
-            color: #fff;
+            color: white;
             text-align: center;
             margin: 0;
-            overflow-x: hidden; /* Prevents horizontal scrolling */
         }
 
         h1 {
@@ -23,7 +22,7 @@
         .slider-container {
             width: 100%;
             height: 100vh; /* Full viewport height */
-            overflow: hidden; /* Hide any overflowed images */
+            overflow: hidden;
             position: relative;
         }
 
@@ -36,37 +35,23 @@
         .carousel img {
             width: 100vw; /* Full width of the viewport */
             height: 100vh; /* Full height of the viewport */
-            object-fit: contain; /* Ensures aspect ratio is maintained */
+            object-fit: contain;
             display: inline-block;
         }
 
-        /* Navigation arrows */
-        .prev, .next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            padding: 15px;
-            cursor: pointer;
-            border: none;
-            font-size: 18px;
-            border-radius: 5px;
+        /* For individual slide links */
+        .slide {
+            width: 100%;
+            height: 100vh;
+            padding-top: 20px;
+            color: black;
+            background: #fff;
         }
 
-        .prev {
-            left: 10px;
-        }
-
-        .next {
-            right: 10px;
-        }
-
-        /* Make carousel images responsive for mobile and tablet devices */
         @media (max-width: 768px) {
             .carousel img {
-                width: 100%; /* Use full width on smaller devices */
-                height: auto; /* Adjust height based on aspect ratio */
+                width: 100%;
+                height: auto;
             }
         }
     </style>
@@ -75,44 +60,45 @@
 
     <h1>Advocacy for Safer Streets</h1>
 
-    <div class="slider-container">
-        <div class="carousel">
-            <img src="slide1.png" alt="Slide 1">
-            <img src="slide2.png" alt="Slide 2">
-            <img src="slide3.png" alt="Slide 3">
-            <img src="slide4.png" alt="Slide 4">
-            <img src="slide5.png" alt="Slide 5">
-            <img src="slide6.png" alt="Slide 6">
-            <img src="slide7.png" alt="Slide 7">
-            <img src="slide8.png" alt="Slide 8">
-        </div>
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    <div id="slide1" class="slide">
+        <h2>Slide 1</h2>
+        <img src="slide1.png" alt="Slide 1">
     </div>
 
-    <script>
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.carousel img');
-        const totalSlides = slides.length;
+    <div id="slide2" class="slide">
+        <h2>Slide 2</h2>
+        <img src="slide2.png" alt="Slide 2">
+    </div>
 
-        // Move to next or previous slide
-        function moveSlide(step) {
-            currentSlide += step;
-            if (currentSlide < 0) {
-                currentSlide = totalSlides - 1;
-            } else if (currentSlide >= totalSlides) {
-                currentSlide = 0;
-            }
-            updateCarousel();
-        }
+    <div id="slide3" class="slide">
+        <h2>Slide 3</h2>
+        <img src="slide3.png" alt="Slide 3">
+    </div>
 
-        // Update the position of the carousel
-        function updateCarousel() {
-            const carousel = document.querySelector('.carousel');
-            const offset = -currentSlide * 100; // Adjust the position of the carousel based on slide index
-            carousel.style.transform = `translateX(${offset}vw)`;
-        }
-    </script>
+    <div id="slide4" class="slide">
+        <h2>Slide 4</h2>
+        <img src="slide4.png" alt="Slide 4">
+    </div>
+
+    <div id="slide5" class="slide">
+        <h2>Slide 5</h2>
+        <img src="slide5.png" alt="Slide 5">
+    </div>
+
+    <div id="slide6" class="slide">
+        <h2>Slide 6</h2>
+        <img src="slide6.png" alt="Slide 6">
+    </div>
+
+    <div id="slide7" class="slide">
+        <h2>Slide 7</h2>
+        <img src="slide7.png" alt="Slide 7">
+    </div>
+
+    <div id="slide8" class="slide">
+        <h2>Slide 8</h2>
+        <img src="slide8.png" alt="Slide 8">
+    </div>
 
 </body>
 </html>
