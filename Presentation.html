@@ -4,19 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your PowerPoint Presentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .slide {
+            margin-bottom: 30px;
+        }
+        .carousel img {
+            width: 80%;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .navigation {
+            margin-top: 30px;
+        }
+        .navigation a {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        .navigation a:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <h1>Your PowerPoint Presentation</h1>
 
-    <div class="carousel">
-        <img src="images/slide1.png" alt="Slide 1" width="100%">
-        <img src="images/slide2.png" alt="Slide 2" width="100%">
-        <img src="images/slide3.png" alt="Slide 3" width="100%">
-        <img src="images/slide4.png" alt="Slide 4" width="100%">
-        <img src="images/slide5.png" alt="Slide 5" width="100%">
-        <img src="images/slide6.png" alt="Slide 6" width="100%">
-        <img src="images/slide7.png" alt="Slide 7" width="100%">
-        <img src="images/slide8.png" alt="Slide 8" width="100%">
+    <div class="slide" id="slide1">
+        <h2>Slide 1</h2>
+        <img src="images/slide1.png" alt="Slide 1">
+    </div>
+    <div class="slide" id="slide2">
+        <h2>Slide 2</h2>
+        <img src="images/slide2.png" alt="Slide 2">
+    </div>
+    <div class="slide" id="slide3">
+        <h2>Slide 3</h2>
+        <img src="images/slide3.png" alt="Slide 3">
+    </div>
+    <div class="slide" id="slide4">
+        <h2>Slide 4</h2>
+        <img src="images/slide4.png" alt="Slide 4">
+    </div>
+    <div class="slide" id="slide5">
+        <h2>Slide 5</h2>
+        <img src="images/slide5.png" alt="Slide 5">
+    </div>
+    <div class="slide" id="slide6">
+        <h2>Slide 6</h2>
+        <img src="images/slide6.png" alt="Slide 6">
+    </div>
+    <div class="slide" id="slide7">
+        <h2>Slide 7</h2>
+        <img src="images/slide7.png" alt="Slide 7">
+    </div>
+    <div class="slide" id="slide8">
+        <h2>Slide 8</h2>
+        <img src="images/slide8.png" alt="Slide 8">
+    </div>
+
+    <div class="navigation">
+        <a href="presentation.html#slide1">Back to Slide 1</a>
+        <a href="presentation.html#slide2">Back to Slide 2</a>
+        <a href="presentation.html#slide3">Back to Slide 3</a>
+        <a href="presentation.html#slide4">Back to Slide 4</a>
+        <a href="presentation.html#slide5">Back to Slide 5</a>
+        <a href="presentation.html#slide6">Back to Slide 6</a>
+        <a href="presentation.html#slide7">Back to Slide 7</a>
+        <a href="presentation.html#slide8">Back to Slide 8</a>
     </div>
 
 </body>
