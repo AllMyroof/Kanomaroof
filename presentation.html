@@ -35,16 +35,27 @@
         }
 
         .carousel img {
-            width: 100vw; /* Each image will take up full width of the screen */
-            height: 100vh; /* Image takes up full height */
-            object-fit: cover; /* Ensures images fill space without distortion */
+            width: 100%; /* Images will take up full width */
+            max-width: 100%;
+            height: auto; /* Keep aspect ratio */
+            object-fit: contain; /* Prevents image stretching */
             display: inline-block;
         }
 
+        /* For mobile devices (less than 768px width) */
         @media (max-width: 768px) {
             .carousel img {
-                width: 100%; /* Adjust images for smaller screens */
+                width: 100%;
                 height: auto;
+            }
+        }
+
+        /* For screens with larger resolutions */
+        @media (min-width: 769px) {
+            .carousel img {
+                width: auto;
+                max-height: 100vh;
+                margin: auto;
             }
         }
     </style>
